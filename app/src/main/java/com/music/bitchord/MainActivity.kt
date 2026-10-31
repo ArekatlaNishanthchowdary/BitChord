@@ -2067,7 +2067,7 @@ private fun BitChordApp(
             Song(
                 videoId = videoId,
                 title = item.title,
-                artist = InnertubeParser.artistFromSubtitle(item.subtitle),
+                artist = InnertubeParser.artistOf(item),
                 thumbnailUrl = item.thumbnailUrl,
                 isVideo = item.isVideo,
             )
@@ -3394,7 +3394,7 @@ private fun BitChordApp(
                                                 Song(
                                                     videoId = videoId,
                                                     title = item.title,
-                                                    artist = InnertubeParser.artistFromSubtitle(item.subtitle),
+                                                    artist = InnertubeParser.artistOf(item),
                                                     thumbnailUrl = item.thumbnailUrl,
                                                     isVideo = item.isVideo,
                                                 ),
